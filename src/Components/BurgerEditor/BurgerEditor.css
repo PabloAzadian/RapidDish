@@ -1,0 +1,79 @@
+.burger-editor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5rem;
+    gap: 5rem;
+    /* align-items: center; */
+
+}
+.ingredients {
+    display: flex;
+    flex-direction: column;
+    /* margin: auto; */
+    align-items: center;
+}
+
+.ingredient-list{
+    width: 250px;
+}
+
+.ingredient-list li{
+    font-size: 20px;
+}
+
+.extra-ingredient{
+    color: green;
+}
+
+.counter-buttons{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.counter-buttons button{
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    
+}
+
+.counter-buttons .minus-button {
+    color: white;
+    background-color: red;
+    border: 0.5px solid black;
+    cursor:pointer;
+  }
+  
+  
+  .counter-buttons .minus-button:disabled {
+    background-color: rgb(204, 155, 155);
+    cursor:not-allowed;
+    opacity: 0.5;
+  }
+  
+  .counter-buttons .plus-button {
+    color: white;
+    background-color: green;
+    border: 0.5px solid black;
+    cursor:pointer;
+  }
+  
+  .counter-buttons .plus-button:disabled {
+    background-color: rgb(150, 184, 150);
+    cursor: not-allowed;
+  }
+  .counter-buttons.toggleable img:hover {
+    /* cursor: pointer; */
+    scale: 1.1;
+    cursor: pointer;
+  }
+  
+
+ img.disabled{
+    opacity: 0.2; /* Change the alpha value as needed */
+    /* Add any other styles for disabled ingredients */
+  }
